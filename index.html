@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlashOS</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="step">
+        <h2 class="label">1. Image</h2>
+        <div id="image-box" class="card image-box" role="button" tabindex="0" aria-label="Choose an image">
+          <span id="image-icon" class="image-icon"></span>
+          <div class="image-text">
+            <div id="image-placeholder" class="dim">Drop an .iso, .img, or .img.xz here</div>
+            <div id="image-selected" class="image-selected" hidden>
+              <span id="image-name" class="image-name"></span>
+              <span id="image-kind" class="badge"></span>
+              <span id="image-size" class="dim"></span>
+            </div>
+            <div id="image-error" class="text-error small" hidden></div>
+          </div>
+          <button id="image-clear" class="icon-btn" type="button" title="Clear image" aria-label="Clear image" hidden></button>
+        </div>
+      </section>
+
+      <section class="step grow">
+        <div class="step-head">
+          <h2 class="label">2. Target disk</h2>
+          <button id="refresh" class="btn btn-icon" type="button"><span id="refresh-icon"></span>Refresh disks</button>
+        </div>
+        <div class="card disk-box">
+          <div id="disk-list" class="disk-list" role="listbox" aria-label="Target disk"></div>
+          <div id="disk-empty" class="disk-empty dim">No external disks found. Plug in a USB drive or SD card.</div>
+          <div id="disk-error" class="disk-empty text-error" hidden></div>
+        </div>
+      </section>
+
+      <section class="step">
+        <h2 class="label">3. Flash</h2>
+        <div id="flash-box" class="card flash-box">
+          <div class="flash-status">
+            <div id="status" class="dim">Choose an image and a target disk.</div>
+            <div id="progress" class="progress" hidden><div id="progress-fill" class="progress-fill"></div></div>
+          </div>
+          <button id="flash" class="btn primary flash-btn" type="button" disabled>Flash</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

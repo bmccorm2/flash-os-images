@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllDisks</key>
+	<array>
+		<string>disk4</string>
+		<string>disk4s1</string>
+		<string>disk5</string>
+		<string>disk5s1</string>
+	</array>
+	<key>AllDisksAndPartitions</key>
+	<array>
+		<dict>
+			<key>Content</key>
+			<string>GUID_partition_scheme</string>
+			<key>DeviceIdentifier</key>
+			<string>disk4</string>
+			<key>OSInternal</key>
+			<false/>
+			<key>Partitions</key>
+			<array>
+				<dict>
+					<key>Content</key>
+					<string>Apple_APFS</string>
+					<key>DeviceIdentifier</key>
+					<string>disk4s1</string>
+					<key>DiskUUID</key>
+					<string>13430B7A-07A0-416A-9EE0-8B8388ED08C8</string>
+					<key>Size</key>
+					<integer>67047424</integer>
+				</dict>
+			</array>
+			<key>Size</key>
+			<integer>67087360</integer>
+		</dict>
+		<dict>
+			<key>APFSPhysicalStores</key>
+			<array>
+				<dict>
+					<key>DeviceIdentifier</key>
+					<string>disk4s1</string>
+				</dict>
+			</array>
+			<key>APFSVolumes</key>
+			<array>
+				<dict>
+					<key>CapacityInUse</key>
+					<integer>51277824</integer>
+					<key>DeviceIdentifier</key>
+					<string>disk5s1</string>
+					<key>DiskUUID</key>
+					<string>C17B27E4-939D-4C99-9664-47DB1F96EA17</string>
+					<key>MountPoint</key>
+					<string>/Volumes/Pi Desktop</string>
+					<key>MountedSnapshots</key>
+					<array/>
+					<key>OSInternal</key>
+					<false/>
+					<key>Size</key>
+					<integer>67047424</integer>
+					<key>VolumeName</key>
+					<string>Pi Desktop</string>
+					<key>VolumeUUID</key>
+					<string>C17B27E4-939D-4C99-9664-47DB1F96EA17</string>
+				</dict>
+			</array>
+			<key>Content</key>
+			<string>Apple_APFS_Container</string>
+			<key>DeviceIdentifier</key>
+			<string>disk5</string>
+			<key>OSInternal</key>
+			<false/>
+			<key>Partitions</key>
+			<array/>
+			<key>Size</key>
+			<integer>67047424</integer>
+		</dict>
+	</array>
+	<key>VolumesFromDisks</key>
+	<array>
+		<string>Pi Desktop</string>
+	</array>
+	<key>WholeDisks</key>
+	<array>
+		<string>disk4</string>
+		<string>disk5</string>
+	</array>
+</dict>
+</plist>

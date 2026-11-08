@@ -1,0 +1,40 @@
+[package]
+name = "flashos"
+version = "0.1.0"
+description = "Flash .iso, .img and .img.xz images to USB drives and SD cards"
+edition = "2024"
+default-run = "flashos"
+
+[lib]
+name = "flashos_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[[bin]]
+name = "flashos"
+path = "src/main.rs"
+
+[[bin]]
+name = "flashos-helper"
+path = "src/bin/flashos-helper.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+plist = "1"
+liblzma = { version = "0.4", features = ["static"] }
+sha2 = "0.10"
+libc = "0.2"
+uuid = { version = "1", features = ["v4"] }
+anyhow = "1"
+thiserror = "2"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+strip = true

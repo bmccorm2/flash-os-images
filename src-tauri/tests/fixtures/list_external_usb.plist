@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllDisks</key>
+	<array>
+		<string>disk6</string>
+		<string>disk6s1</string>
+		<string>disk6s2</string>
+	</array>
+	<key>AllDisksAndPartitions</key>
+	<array>
+		<dict>
+			<key>Content</key>
+			<string>FDisk_partition_scheme</string>
+			<key>DeviceIdentifier</key>
+			<string>disk6</string>
+			<key>OSInternal</key>
+			<false/>
+			<key>Partitions</key>
+			<array>
+				<dict>
+					<key>Content</key>
+					<string>Windows_FAT_32</string>
+					<key>DeviceIdentifier</key>
+					<string>disk6s1</string>
+					<key>MountPoint</key>
+					<string>/Volumes/bootfs</string>
+					<key>Size</key>
+					<integer>536870912</integer>
+					<key>VolumeName</key>
+					<string>bootfs</string>
+				</dict>
+				<dict>
+					<key>Content</key>
+					<string>Linux</string>
+					<key>DeviceIdentifier</key>
+					<string>disk6s2</string>
+					<key>Size</key>
+					<integer>5368709120</integer>
+				</dict>
+			</array>
+			<key>Size</key>
+			<integer>30752636928</integer>
+		</dict>
+	</array>
+	<key>VolumesFromDisks</key>
+	<array>
+		<string>bootfs</string>
+	</array>
+	<key>WholeDisks</key>
+	<array>
+		<string>disk6</string>
+	</array>
+</dict>
+</plist>
